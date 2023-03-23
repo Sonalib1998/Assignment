@@ -17,7 +17,6 @@ const App = () => {
     const fetchAllNotes=async()=>{
       try{
       const res=await axios.get("http://localhost:8800/getAllNotes")
-      console.log(res)
       setAddItem(res.data)
       }catch(err){
         console.log(err)
